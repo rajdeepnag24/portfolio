@@ -224,17 +224,18 @@ p {
     padding-left: 2vw;
     align-items: center;
     flex: 1;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
 }
 .hero-description p {
     display: flex;
     align-items: center;
     font-size: 25px;
     font-weight:400;
-    flex: 4;
+    flex: none;
 }
 .hero-description .button {
-    flex: 1;
+    flex: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
