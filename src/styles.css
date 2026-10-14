@@ -482,12 +482,17 @@ footer p {
 .art-gallery {
     max-width: var(--wrap);
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: clamp(32px, 4vw, 52px);
     padding: clamp(24px, 3vw, 40px) var(--gutter) clamp(72px, 11vw, 116px);
+    column-count: 3;
+    column-gap: clamp(26px, 3vw, 46px);
 }
-.art-card { display: flex; flex-direction: column; }
+.art-card {
+    display: block;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    margin: 0 0 clamp(26px, 3vw, 46px);
+}
 .art-card img {
     width: 100%;
     height: auto;
@@ -517,7 +522,10 @@ footer p {
 }
 
 @media only screen and (max-width: 900px) {
-    .art-gallery { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+    .art-gallery { column-count: 2; }
+}
+@media only screen and (max-width: 560px) {
+    .art-gallery { column-count: 1; }
 }
 
 /* ============================= CASE STUDY PAGES ============================= */
