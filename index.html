@@ -1,18 +1,26 @@
-<title>Nag Rajdeep</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajdeep Nag</title>
+<meta name="description" content="Rajdeep Nag — painter and product manager. Paintings in oil, acrylic and watercolour alongside product case studies.">
 <link rel="stylesheet" href="src/styles.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 <link rel="icon" href="favicon/path20857.png">
+</head>
+<body>
 
 <header id="nav-bar">
     <nav>
-        <a href="index.html"><img class="logo" src="images/path20857.png" alt="logo"></a>
+        <a class="wordmark" href="index.html">Rajdeep Nag</a>
         <ul class="menu" id="nav-list">
             <li><a class="nav_link" href="art.html">Art</a></li>
-            <li><a class="nav_link active" href="index.html">Work</a></li>
+            <li><a class="nav_link active" href="index.html">Projects</a></li>
             <li><a class="nav_link" href="about.html">About</a></li>
         </ul>
         <button class="toggle_btn">
@@ -22,53 +30,122 @@
     <div class="dropdown_menu">
         <ul>
             <li><a class="nav_link" href="art.html">Art</a></li>
-            <li><a class="nav_link active" href="index.html">Work</a></li>
+            <li><a class="nav_link active" href="index.html">Projects</a></li>
             <li><a class="nav_link" href="about.html">About</a></li>
         </ul>
     </div>
 </header>
 <section class="hero">
-    <div class="hero-area">
-        <div class="hero-title">
-            <h1><em>Welcome! <br></em> My name is Rajdeep.</h1>
-        </div>
-        <div class="hero-description">
-            <p>I'm an artist and designer sharing my acrylic paintings alongside selected design and development projects.
-            </p>
-            <a href="about.html" class="button">About Me</a>
+    <div class="hero-inner">
+        <h1 class="hero-name">Rajdeep Nag</h1>
+        <p class="hero-statement">Painter and product manager. I work in oil, acrylic and watercolour, and in the design and strategy of digital products. This is where the two sit side by side.</p>
+        <div class="hero-links">
+            <a href="#projects">See the work</a>
+            <a href="art.html">View the paintings</a>
         </div>
     </div>
 </section>
-<section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div class="project-container">
-        <a href="create.html" class="projects-link">
-            <div class="project-card">
-                <img src="images/Frame 109.png" alt="" class="project-image"/>
-                <div class="card-content">
-                    <h2 class="project-heading">CreATE</h2>
-                    <p class="project-cat">Case Study • Web Development • Class Project</p>
-                    <p class="project-desc">A recipe manager web application made as a part of my courseswork.</p>
-                </div>
+
+<section class="projects wrap" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-lead">Product case studies, AI build challenges and a couple of earlier class projects.</p>
+    <div class="project-grid">
+
+        <article class="project">
+            <a class="project-media" href="https://www.figma.com/proto/ljjwusqf0C3P7tymk1eEoj/Trippie-%E2%80%94-Living-board-journey?node-id=26-8082&t=D5CwdmMBDj4Krjeg-1&starting-point-node-id=26%3A8082" target="_blank" rel="noopener">
+                <img src="images/projects/trippie.jpg" alt="Trippie — Reel to Real, a MakeMyTrip concept">
+            </a>
+            <div class="project-body">
+                <h3 class="project-title"><a href="https://www.figma.com/proto/ljjwusqf0C3P7tymk1eEoj/Trippie-%E2%80%94-Living-board-journey?node-id=26-8082&t=D5CwdmMBDj4Krjeg-1&starting-point-node-id=26%3A8082" target="_blank" rel="noopener">Trippie — Reel to Real</a></h3>
+                <p class="project-meta">MakeMyTrip Young Turks' Challenge, 2026</p>
+                <p class="project-desc">A living Canvas inside MakeMyTrip that turns a saved Instagram reel into a booked trip — priced, kept current, verified and ready the moment it fits.</p>
+                <p class="project-links">
+                    <a href="https://www.figma.com/proto/ljjwusqf0C3P7tymk1eEoj/Trippie-%E2%80%94-Living-board-journey?node-id=26-8082&t=D5CwdmMBDj4Krjeg-1&starting-point-node-id=26%3A8082" target="_blank" rel="noopener">Prototype</a>
+                    <a href="images/projects/trippie-reel-to-real.pdf" target="_blank" rel="noopener">Deck</a>
+                </p>
             </div>
-        </a>
-        <a href="sociusqr.html" class="projects-link">
-            <div class="project-card">
-                <img src="images/Frame 1995.png" alt="" class="project-image"/>
-                <div class="card-content">
-                    <h2 class="project-heading">SociusQR</h2>
-                    <p class="project-cat">Case Study • App Development • Passion Project</p>
-                    <p class="project-desc">A virtual platform to share customizable profiles.</p>
-                </div>
+        </article>
+
+        <article class="project">
+            <a class="project-media" href="https://brandfluence-rosy.vercel.app" target="_blank" rel="noopener">
+                <img src="images/projects/brandfluence.jpg" alt="Brandfluence creator–brand marketplace prototype">
+            </a>
+            <div class="project-body">
+                <h3 class="project-title"><a href="https://brandfluence-rosy.vercel.app" target="_blank" rel="noopener">Brandfluence</a></h3>
+                <p class="project-meta">Product-discovery case study, ISB 2026</p>
+                <p class="project-desc">From 25 interviews to a tested MVP for a creator–brand marketplace — matching small Indian brands with nano-creators whose audience actually fits.</p>
+                <p class="project-links">
+                    <a href="https://brandfluence-rosy.vercel.app" target="_blank" rel="noopener">Live demo</a>
+                    <a href="https://github.com/rajdeepnag24/brandfluence" target="_blank" rel="noopener">Case study</a>
+                </p>
             </div>
-        </a>
+        </article>
+
+        <article class="project">
+            <a class="project-media" href="https://razorpay-dues-rajdeepnag2410-5143.vercel.app" target="_blank" rel="noopener">
+                <img src="images/projects/razorpay-dues.jpg" alt="Razorpay Dues feature prototype">
+            </a>
+            <div class="project-body">
+                <h3 class="project-title"><a href="https://razorpay-dues-rajdeepnag2410-5143.vercel.app" target="_blank" rel="noopener">Razorpay Dues</a></h3>
+                <p class="project-meta">Razorpay AI × PM Build Challenge, 2026</p>
+                <p class="project-desc">A Razorpay app feature that groups unpaid payment links by client and drafts a polite WhatsApp nudge. The merchant always sends it herself.</p>
+                <p class="project-links">
+                    <a href="https://razorpay-dues-rajdeepnag2410-5143.vercel.app" target="_blank" rel="noopener">Live demo</a>
+                    <a href="https://github.com/rajdeepnag24/razorpay-dues" target="_blank" rel="noopener">GitHub</a>
+                </p>
+            </div>
+        </article>
+
+        <article class="project">
+            <a class="project-media" href="https://payday-hub-vercel.vercel.app/" target="_blank" rel="noopener">
+                <img src="images/projects/paytm-payday-hub.jpg" alt="Paytm Payday Hub payment-planning prototype">
+            </a>
+            <div class="project-body">
+                <h3 class="project-title"><a href="https://payday-hub-vercel.vercel.app/" target="_blank" rel="noopener">Payday Hub</a></h3>
+                <p class="project-meta">Paytm-inspired product concept, 2026</p>
+                <p class="project-desc">A mobile concept for seeing recurring payments in one place and moving from "I need to pay this" to a clear next step.</p>
+                <p class="project-links">
+                    <a href="https://payday-hub-vercel.vercel.app/" target="_blank" rel="noopener">Live demo</a>
+                    <a href="https://github.com/rajdeepnag24/paytm-payday-hub" target="_blank" rel="noopener">GitHub</a>
+                </p>
+            </div>
+        </article>
+
+        <article class="project">
+            <a class="project-media" href="create.html">
+                <img src="images/Frame 109.png" alt="CreATE recipe manager">
+            </a>
+            <div class="project-body">
+                <h3 class="project-title"><a href="create.html">CreATE</a></h3>
+                <p class="project-meta">Recipe manager, class project</p>
+                <p class="project-desc">A recipe-manager web app built for my coursework — a full product case study from research through to build.</p>
+                <p class="project-links">
+                    <a href="create.html">Case study</a>
+                </p>
+            </div>
+        </article>
+
+        <article class="project">
+            <a class="project-media" href="sociusqr.html">
+                <img src="images/Frame 1995.png" alt="SociusQR customizable profiles">
+            </a>
+            <div class="project-body">
+                <h3 class="project-title"><a href="sociusqr.html">SociusQR</a></h3>
+                <p class="project-meta">Customizable digital profiles</p>
+                <p class="project-desc">A passion project: a virtual platform for sharing customizable QR profiles, taken through discovery, design and development.</p>
+                <p class="project-links">
+                    <a href="sociusqr.html">Case study</a>
+                </p>
+            </div>
+        </article>
+
     </div>
 </section>
 
 <footer id="contact">
     <div class="footer-container">
         <div>
-            <img src="images/path20857.png" alt="logo">
+            <span class="footer-mark">Rajdeep Nag</span>
             <h4>Hope you had a pleasant journey through my portfolio.
                 <br>
                 Click the little icons to reach me.
@@ -78,16 +155,18 @@
             <p>made by me</p>
             <div class="footer-grid">
                 <a href="mailto:rajdeep.nag.2410@gmail.com">
-                    <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                    <i class="fa-regular fa-envelope" style="color: #1A1813;"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/rajdeepnag/" target="_blank">
-                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #1A1813;"></i>
                 </a>
-                <a href="https://github.com/RajdepNag" target="_blank">
-                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                <a href="https://github.com/rajdeepnag24" target="_blank">
+                    <i class="fa-brands fa-github" style="color: #1A1813;"></i>
                 </a>
             </div>
         </div>
     </div>
 </footer>
 <script src="src/app.js"></script>
+</body>
+</html>
